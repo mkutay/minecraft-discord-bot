@@ -75,6 +75,9 @@ async def on_message(message):
 
   response = ""
 
+  if msg == "help":
+    response = """start the server using '!sg start', stop the server using '!sg stop', run any command using '!sg run COMMAND', use '!sg help' for this help message"""
+
   if msg == "start":
     if running:
       response = "the server is already running"
