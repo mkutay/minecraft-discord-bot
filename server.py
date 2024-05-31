@@ -11,8 +11,6 @@ load_dotenv()
 client = discord.Client(intents=discord.Intents.all())
 token = os.getenv("DISCORD_TOKEN")
 
-user = "ac-ulan-serveri"
-
 running = False
 
 def output_reader(procc):
